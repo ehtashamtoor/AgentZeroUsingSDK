@@ -8,7 +8,7 @@ HOST = os.getenv("HOST", "127.0.0.1")
 PORT = int(os.getenv("PORT", 8000))
 
 # API Keys
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY")
 
 # LLM settings
 MODEL = os.getenv("model")
@@ -20,7 +20,7 @@ SUPABASE_KEY = os.getenv("SUPABASE_KEY")
 
 
 required_vars = {
-    "GOOGLE_API_KEY": GOOGLE_API_KEY,
+    "GEMINI_API_KEY": GEMINI_API_KEY,
     "model": MODEL,
     "SUPABASE_URL": SUPABASE_URL,
     "SUPABASE_KEY": SUPABASE_KEY,

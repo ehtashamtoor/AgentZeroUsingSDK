@@ -12,7 +12,7 @@ from agents import (
 )
 import asyncio
 from profileInfo import profile_info
-from utils.config import GOOGLE_API_KEY, BASE_URL, MODEL
+from utils.config import GEMINI_API_KEY, BASE_URL, MODEL
 
 # load_dotenv()
 
@@ -20,7 +20,7 @@ set_tracing_disabled(True)
 # just use this to enable verbose logging to stdout
 # enable_verbose_stdout_logging()
 
-api_key = GOOGLE_API_KEY
+api_key = GEMINI_API_KEY
 if not api_key:
     raise ValueError("API key for Google is not set in the environment variables")
 
